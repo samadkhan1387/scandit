@@ -99,14 +99,14 @@ class _HomePageState extends State<HomePage> {
       // Check if Vibration is enabled and trigger it
       if (widget.isVibrateEnabled) {
         if (await Vibration.hasVibrator()) {
-          Vibration.vibrate(); // Vibrate the phone
+          _customVibration();
         } else {
           print("Device does not support vibration.");
         }
       }
       // Check if Beep is enabled and play beep sound
       if (widget.isBeepEnabled) {
-        _audioPlayer.play('assets/beep.mp3' as Source); // Beep sound
+        _playBeepSound();
       }
 
       Navigator.push(
@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
       _showscanDialog('Parsing Error', 'Failed to Parse Barcode');
       print("Error parsing barcode: $e");
     } finally {
-      Future.delayed(Duration(seconds: 2), () {
+      Future.delayed(const Duration(seconds: 2), () {
         setState(() {
           isScanning = false;
         });
