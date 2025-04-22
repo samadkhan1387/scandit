@@ -27,3 +27,20 @@ Before you begin, ensure that you have the following tools installed:
 
    ```bash
    git clone https://github.com/samadkhan1387/scandit.git
+
+
+## App Screenshots
+
+Below are the app screenshots showcasing different Login Ui Design:
+
+<table>
+  <tr>
+    <td><img src="./screenshots/1.png" width="200" height="400" alt="Main Screen" /></td>
+    <td><img src="./screenshots/2.png" width="200" height="400" alt="Login Screen" /></td>
+    <td><img src="./screenshots/3.png" width="200" height="400" alt="Login Screen" /></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/4.png" width="200" height="400" alt="Login Screen" /></td>
+    <td><img src="./screenshots/5.png" width="200" height="400" alt="Login Screen" /></td>
+    </tr>
+</table>
