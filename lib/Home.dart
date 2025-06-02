@@ -225,7 +225,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             // QR scanner area
-            const SizedBox(height: 20),
+            const SizedBox(height: 0),
             Padding(
               padding: const EdgeInsets.only(left: 15, right: 15, top: 0),
               child: Center(
@@ -233,7 +233,7 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.center,
                   children: [
                     Container(
-                      height: 420,
+                      height: 250,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(25),
